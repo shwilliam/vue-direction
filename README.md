@@ -1,6 +1,10 @@
 # vue-direction
 
-> Direction aware hover in Vue.js
+> Direction aware hover in Vuejs
+
+![Usage](https://user-images.githubusercontent.com/38357771/53678998-b326c680-3c94-11e9-8e4f-f65feee8651f.gif)
+
+[![Try it on codesandbox](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/3x46lrlk1q)
 
 ## Installation
 
