@@ -1,5 +1,7 @@
 # vue-direction
 
+![Minified size](https://img.shields.io/bundlephobia/min/vue-direction.svg?style=plastic)
+
 > Direction aware hover in Vuejs
 
 ![Usage](https://user-images.githubusercontent.com/38357771/53678998-b326c680-3c94-11e9-8e4f-f65feee8651f.gif)
