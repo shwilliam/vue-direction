@@ -1,36 +1,36 @@
 var script = {
-    name: 'VueDirection',
-    data: function data() {
-        return {
-            xDirection: '',
-            yDirection: '',
-            oldX: 0,
-            oldY: 0,
-        }
-    },
-    computed: {
-        mouseDirection: function mouseDirection() {
-            return { x: this.xDirection, y: this.yDirection }
-        },
-    },
-    methods: {
-        getMouseDirection: function getMouseDirection(e) {
-            if (this.oldX < e.pageX) {
-                this.xDirection = 'right';
-            } else {
-                this.xDirection = 'left';
-            }
-        
-            if (this.oldY < e.pageY) {
-                this.yDirection = 'down';
-            } else {
-                this.yDirection = 'up';
-            }
-        
-            this.oldX = e.pageX;
-            this.oldY = e.pageY;
-        },
-    },
+  name: "VueDirection",
+  data: function data() {
+    return {
+      xDirection: "",
+      yDirection: "",
+      prevPageX: 0,
+      prevPageY: 0
+    };
+  },
+  computed: {
+    mouseDirection: function mouseDirection() {
+      return { x: this.xDirection, y: this.yDirection };
+    }
+  },
+  methods: {
+    getMouseDirection: function getMouseDirection(e) {
+      if (this.prevPageX < e.pageX) {
+        this.xDirection = "right";
+      } else {
+        this.xDirection = "left";
+      }
+
+      if (this.prevPageY < e.pageY) {
+        this.yDirection = "down";
+      } else {
+        this.yDirection = "up";
+      }
+
+      this.prevPageX = e.pageX;
+      this.prevPageY = e.pageY;
+    }
+  }
 };
 
 function normalizeComponent(template, style, script, scopeId, isFunctionalTemplate, moduleIdentifier
